@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression" verbose="1">
+    <listeners>
+        <listener class-name="core.TestListener"/>
+    </listeners>
+    <test name="Regression Gist Test">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.DiscoverGistTest"/>
+            <class name="tests.LoginTest"/>
+            <class name="tests.CreateGistTest"/>
+            <class name="tests.YourGistTest"/>
+        </classes>
+    </test>
+</suite>
